@@ -11,12 +11,13 @@ const LandingPage = () => {
         <div className="left-column">
           <h1 className="name">Anjila Manandhar</h1>
           <h2 className="title">Project Manager | ERP Specialist | Agile Practitioner</h2>
-          <a className="btn-download" href="/CV_Anjila_Manandhar.pdf" download>
-            Download CV
-          </a>
-        </div>
-
-        <div className="divider"></div>
+          <a  href="/anjila_manandhar_cv.pdf"   // absolute path from the domain root
+  download                          // forces “download” instead of opening
+  className="btn btn-download">
+  Download CV
+</a>
+          
+          
 
         <div className="right-column">
           <img src="/anjila-photo.jpg" alt="Anjila Manandhar" className="profile-photo" />
