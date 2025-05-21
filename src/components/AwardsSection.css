@@ -1,0 +1,51 @@
+.awards-section {
+  background-color: var(--bg-secondary);
+    color: white;
+    padding: 100px 1rem;
+    text-align: center;
+  }
+  
+  .awards-title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #ffecb3;
+  }
+  
+  .awards-grid {
+    display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Make it responsive */
+  gap: 1.5rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin: 20px auto;
+    margin-left: 40px;
+  }
+  
+  .award-card {
+     background-color: var(--bg-secondary);
+    border-left: 6px solid #fbc02d;
+    border-radius: 8px;
+    padding: 1.5rem;
+    width: 300px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease;
+    text-align: left;
+  }
+  
+  .award-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .award-card h3 {
+    margin-bottom: 0.5rem;
+    color: #fff59d;
+  }
+  
+  .award-year {
+    font-size: 0.85rem;
+    color: #ccc;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
