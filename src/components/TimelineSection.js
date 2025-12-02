@@ -3,7 +3,13 @@ import React from 'react';
 import './TimelineSection.css';
 
 const timelineData = [
-   {
+      {
+    type: 'education',
+    title: 'MIS - University of Bremen',
+    subtitle: '2024 - Present',
+    description: 'Studying Management Information Systems',
+  },
+  {
     type: 'experience',
     title: 'Operation/Account Manager',
     subtitle: 'October 2020 - Present',
