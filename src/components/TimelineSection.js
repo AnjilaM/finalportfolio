@@ -33,13 +33,7 @@ const timelineData = [
     subtitle: '2018 - 2021',
     description: 'Bachelor of Computer Applications, GPA - 3.22',
   },
- 
-  {
-    type: 'education',
-    title: '+2 Science – Khwopa Higher Secondary School',
-    subtitle: '2016 - 2018',
-    description: 'Completed Higher Secondary Education in Science stream, GPA - 2.79', 
-  },
+
 ];
 
 const TimelineSection = () => {
