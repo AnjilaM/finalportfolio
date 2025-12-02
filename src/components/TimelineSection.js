@@ -3,10 +3,22 @@ import React from 'react';
 import './TimelineSection.css';
 
 const timelineData = [
+   {
+    type: 'experience',
+    title: 'Operation/Account Manager',
+    subtitle: 'October 2020 - Present',
+    description: 'Manage stock, stakeholder and VAT Bilings.',
+  },
+  {
+    type: 'experience',
+    title: 'Associate Project Manager, Nexus Incorporation',
+    subtitle: 'October 2023 - December 2024',
+    description: 'Managed Project through Odoo, System and Workflow Improvement, Risk analysis and control.',
+  },
   {
     type: 'experience',
     title: 'Project Manager, Axios Softwork',
-    subtitle: '2022 - 2024',
+    subtitle: 'june 2021 - Jan 2023',
     description: 'Led SAAS projects, agile workflows, and oversaw budgets and team velocity.',
   },
   {
@@ -15,12 +27,7 @@ const timelineData = [
     subtitle: '2018 - 2021',
     description: 'Bachelor of Computer Applications, GPA - 3.22',
   },
-  {
-    type: 'experience',
-    title: 'Associate PM, Nexus Incorporation',
-    subtitle: '2021 - 2022',
-    description: 'Managed Project through Odoo, System and Workflow Improvement, Risk analysis and control.',
-  },
+ 
   {
     type: 'education',
     title: '+2 Science – Khwopa Higher Secondary School',
