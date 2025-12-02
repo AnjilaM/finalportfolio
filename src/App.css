@@ -5,42 +5,52 @@
   --text-primary: #7AE2CF;
   --text-secondary: #cbd5e1;
 }
+* {
+  box-sizing: border-box;
+}
 
-body, html {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    background-color: var(--bg-primary);
-  color: var(--text-primary);
-    scroll-behavior: smooth;
-    overflow-x: hidden;
-  }
-  section {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-    margin: 0 !important;
-  }
-  
-  .skills-section {
-    width: 100vw;
-    margin: 0 !important;
-    padding: 100px 0;
-   
-body {
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+/* Global Reset and Box Sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
   background-color: var(--bg-primary);
   color: var(--text-primary);
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
-    overflow-x: hidden;
-  }
-  
-  .skills-inner {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 1rem;
-  }
-  
-  
-  .App {
-    width: 100%;
-  }
-  
+
+/* App Container */
+.App {
+  width: 100%;
+}
+
+/* Section Styling */
+section {
+  padding: 100px 1rem;
+  margin: 0 auto;
+}
+
+/* Skills Section */
+.skills-section {
+  width: 100vw;
+  margin: 0;
+  padding: 100px 0;
+}
+
+.skills-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}

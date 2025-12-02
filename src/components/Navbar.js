@@ -3,7 +3,8 @@ import './Navbar.css';
 
 const Navbar = () => {
   return (
-    <nav className="modern-navbar fixed-top">
+    <nav className="modern-navbar fixed-top z-50">
+    <div className="navbar-container">
       <div className="nav-brand">Anjila</div>
       <ul className="nav-links">
         <li><a href="#skills">Skills</a></li>
@@ -12,7 +13,9 @@ const Navbar = () => {
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-    </nav>
+    </div>
+  </nav>
+  
   );
 };
 
