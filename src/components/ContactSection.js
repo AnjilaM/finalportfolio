@@ -1,13 +1,33 @@
 // src/components/ContactSection.js
-import React from 'react';
+import React, { useState } from 'react';
 import './ContactSection.css';
+import emailjs from '@emailjs/browser';
 import { FaLinkedin, FaEnvelope, FaGitlab } from 'react-icons/fa';
 
+const SERVICE_ID = "service_qzww8rj";
+const TEMPLATE_ID = "template_vnnnrrl"; // Contact Us template
+const PUBLIC_KEY = "tXb3DXjsBs-hgD7MT";
+
 const ContactSection = () => {
+  const [status, setStatus] = useState("");
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert("Your message has been sent!");
-    e.target.reset(); // clear the form after submit
+    setStatus("Sending...");
+
+    emailjs
+      .sendForm(SERVICE_ID, TEMPLATE_ID, e.target, PUBLIC_KEY)
+      .then(
+        () => {
+          setStatus("Your message has been sent!");
+          alert("Your message has been sent!");   // optional alert
+          e.target.reset();
+        },
+        (error) => {
+          console.error("EmailJS error:", error);
+          setStatus("Failed to send. Please try again.");
+        }
+      );
   };
 
   return (
@@ -15,15 +35,16 @@ const ContactSection = () => {
       <h2 className="contact-title">Let's Connect</h2>
 
       <form className="contact-form" onSubmit={handleSubmit}>
+        {/* These names must match your EmailJS template variables */}
         <input
           type="text"
-          name="name"
+          name="from_name"
           placeholder="Your Name"
           required
         />
         <input
           type="email"
-          name="email"
+          name="reply_to"
           placeholder="Your Email"
           required
         />
@@ -34,6 +55,8 @@ const ContactSection = () => {
         ></textarea>
         <button type="submit">Send Message</button>
       </form>
+
+      {status && <p className="contact-status">{status}</p>}
 
       <div className="social-icons">
         <a
